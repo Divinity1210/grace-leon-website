@@ -99,15 +99,15 @@ const featured = [
 
 /* ─── The Mark expressions data ─── */
 const markExpressions = [
-  { src: "/campaign/mark/01-grace.png",       label: "Grace",       desc: "The quiet power of presence" },
-  { src: "/campaign/mark/02-sovereignty.png", label: "Sovereignty", desc: "Nothing here apologises" },
-  { src: "/campaign/mark/03-memory.png",      label: "Memory",      desc: "What you carry forward" },
-  { src: "/campaign/mark/04-the-name.png",    label: "The Name",    desc: "Identity etched in gold" },
-  { src: "/campaign/mark/05-the-vow.png",     label: "The Vow",     desc: "A promise made permanent" },
-  { src: "/campaign/mark/06-lagos.png",       label: "Lagos",       desc: "Where it all begins" },
-  { src: "/campaign/mark/07-the-light.png",   label: "The Light",   desc: "What fire looks like at rest" },
-  { src: "/campaign/mark/08-craft.png",       label: "Craft",       desc: "Patience as a philosophy" },
-  { src: "/campaign/mark/09-the-mark.png",    label: "The Mark",    desc: "The seal of everything" },
+  { src: "/campaign/mark/01-grace.png",       label: "Grace",       desc: "The quiet power of presence",     story: "She does not rush. She does not explain. She enters a room and simply belongs. That is grace." },
+  { src: "/campaign/mark/02-sovereignty.png", label: "Sovereignty", desc: "Nothing here apologises",         story: "The unedited self. The woman who wears what she wears because it is hers, not because it was approved." },
+  { src: "/campaign/mark/03-memory.png",      label: "Memory",      desc: "What you carry forward",         story: "The weight of a ring that belonged to someone before you. Jewellery endures beyond fashion." },
+  { src: "/campaign/mark/04-the-name.png",    label: "The Name",    desc: "Identity etched in gold",        story: "A name chosen with the same care as a stone is set. Deliberately. Permanently." },
+  { src: "/campaign/mark/05-the-vow.png",     label: "The Vow",     desc: "A promise made permanent",       story: "The moment a ring becomes more than a ring. The silence that follows a promise, when the meaning settles." },
+  { src: "/campaign/mark/06-lagos.png",       label: "Lagos",       desc: "Where it all begins",            story: "Not a backdrop. The engine. A city that builds at a pace the world is only now learning to respect." },
+  { src: "/campaign/mark/07-the-light.png",   label: "The Light",   desc: "What fire looks like at rest",   story: "A diamond does not announce its brilliance. It refracts what it receives. Inner fire that simply is." },
+  { src: "/campaign/mark/08-craft.png",       label: "Craft",       desc: "Patience as a philosophy",       story: "The goldsmith who files a surface for the fourth time because the third was not enough." },
+  { src: "/campaign/mark/09-the-mark.png",    label: "The Mark",    desc: "The seal of everything",         story: "Four arches, nine truths, one brand. Pressed into velvet, engraved into gold, embossed into memory." },
 ];
 
 export default function Home() {
@@ -117,17 +117,17 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full overflow-hidden">
 
-      {/* ═══════════════  1 · HERO — 3D Parallax  ═══════════════ */}
+      {/* ═══════════════  1 · HERO. 3D Parallax  ═══════════════ */}
       <section className="relative w-full h-screen bg-brand-black overflow-hidden" style={{ perspective: "1000px" }}>
 
-        {/* Layer 1: Background image — slowest parallax */}
+        {/* Layer 1: Background image. slowest parallax */}
         <div
           className="absolute inset-0 z-0"
           style={{ transform: `translate3d(0, ${scrollY * 0.3}px, -100px) scale(1.1)` }}
         >
           <Image
             src="/campaign/hero.png"
-            alt="Grace Leon — Memory, made wearable"
+            alt="Grace Leon. Memory, made wearable"
             fill
             className={`object-cover transition-transform duration-[12000ms] ease-out ${heroLoaded ? "scale-[1.06]" : "scale-100"}`}
             priority
@@ -144,7 +144,7 @@ export default function Home() {
         {/* Layer 3: Gold particles */}
         <GoldParticles />
 
-        {/* Layer 4: Centre logo mark — mid parallax */}
+        {/* Layer 4: Centre logo mark. mid parallax */}
         <div
           className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none"
           style={{ transform: `translate3d(0, ${scrollY * 0.15}px, 0)` }}
@@ -159,7 +159,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Layer 5: Hero text — fastest parallax (comes toward you) */}
+        {/* Layer 5: Hero text. fastest parallax (comes toward you) */}
         <div
           className="absolute bottom-0 left-0 right-0 z-10 px-6 md:px-16 pb-16 md:pb-24"
           style={{ transform: `translate3d(0, ${scrollY * -0.1}px, 50px)` }}
@@ -260,7 +260,7 @@ export default function Home() {
       <section className="w-full bg-brand-white py-28 md:py-36">
         <div className="max-w-[1440px] mx-auto px-6 md:px-10">
           <Reveal className="text-center mb-20">
-            <p className="text-gold text-[10px] uppercase tracking-[0.5em] font-sans font-light mb-5">New Arrivals — Leon Rings</p>
+            <p className="text-gold text-[10px] uppercase tracking-[0.5em] font-sans font-light mb-5">New Arrivals · Leon Rings</p>
             <h2 className="text-4xl md:text-[56px] font-serif text-brand-black font-light leading-tight">Selected Works</h2>
           </Reveal>
 
@@ -292,7 +292,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ═══════════════  4 · THE MARK — Editorial Mosaic  ═══════════════ */}
+      {/* ═══════════════  4 · THE MARK. Editorial Mosaic  ═══════════════ */}
       <section className="w-full bg-brand-black py-28 md:py-40">
         <div className="max-w-[1200px] mx-auto px-6 text-center">
           <Reveal>
@@ -309,81 +309,72 @@ export default function Home() {
             </p>
           </Reveal>
 
-          {/* Staggered editorial mosaic — row 1: 2 large + 1 tall */}
+          {/* Staggered editorial mosaic. row 1: 2 large + 1 tall */}
           <div className="grid grid-cols-6 md:grid-cols-12 gap-[3px] mb-[3px]">
-            {/* Row 1 — Large feature + 2 stacked */}
+            {/* Row 1. Large feature + 2 stacked */}
             <div className="col-span-6 md:col-span-5 row-span-2 relative group overflow-hidden cursor-pointer aspect-[4/5]">
               <Image src={markExpressions[0].src} alt={markExpressions[0].label} fill className="object-cover group-hover:scale-[1.05] transition-transform duration-700" />
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-black/80 via-brand-black/10 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-black/80 via-brand-black/10 to-transparent group-hover:from-brand-black/90 group-hover:via-brand-black/60 group-hover:to-brand-black/30 transition-all duration-500" />
               <div className="absolute bottom-0 left-0 right-0 p-6 text-left">
                 <p className="text-[9px] uppercase tracking-[0.4em] font-sans font-light text-gold/70 mb-2">01</p>
                 <h3 className="text-2xl md:text-3xl font-serif italic text-cream font-light mb-2">{markExpressions[0].label}</h3>
-                <p className="text-cream/40 font-sans font-light text-[12px]">{markExpressions[0].desc}</p>
+                <p className="text-cream/40 font-sans font-light text-[12px] group-hover:opacity-0 transition-opacity duration-300">{markExpressions[0].desc}</p>
+                <p className="text-cream/60 font-serif italic text-[14px] leading-relaxed opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100 translate-y-3 group-hover:translate-y-0 max-w-[320px]">{markExpressions[0].story}</p>
               </div>
             </div>
 
-            <div className="col-span-3 md:col-span-4 relative group overflow-hidden cursor-pointer aspect-[4/3]">
-              <Image src={markExpressions[1].src} alt={markExpressions[1].label} fill className="object-cover group-hover:scale-[1.05] transition-transform duration-700" />
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-black/70 to-transparent" />
-              <div className="absolute bottom-0 left-0 p-4 text-left">
-                <p className="text-[8px] uppercase tracking-[0.4em] font-sans font-light text-gold/70 mb-1">02</p>
-                <h3 className="text-lg font-serif italic text-cream font-light">{markExpressions[1].label}</h3>
+            {[1, 2].map((idx) => (
+              <div key={idx} className={`col-span-3 ${idx === 1 ? "md:col-span-4" : "md:col-span-3"} relative group overflow-hidden cursor-pointer ${idx === 1 ? "aspect-[4/3]" : "aspect-[3/4]"}`}>
+                <Image src={markExpressions[idx].src} alt={markExpressions[idx].label} fill className="object-cover group-hover:scale-[1.05] transition-transform duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-black/70 to-transparent group-hover:from-brand-black/90 group-hover:via-brand-black/50 group-hover:to-brand-black/20 transition-all duration-500" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-left">
+                  <p className="text-[8px] uppercase tracking-[0.4em] font-sans font-light text-gold/70 mb-1">0{idx + 1}</p>
+                  <h3 className="text-lg font-serif italic text-cream font-light mb-1">{markExpressions[idx].label}</h3>
+                  <p className="text-cream/50 font-serif italic text-[12px] leading-relaxed opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100 translate-y-2 group-hover:translate-y-0">{markExpressions[idx].story}</p>
+                </div>
               </div>
-            </div>
-
-            <div className="col-span-3 md:col-span-3 relative group overflow-hidden cursor-pointer aspect-[3/4]">
-              <Image src={markExpressions[2].src} alt={markExpressions[2].label} fill className="object-cover group-hover:scale-[1.05] transition-transform duration-700" />
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-black/70 to-transparent" />
-              <div className="absolute bottom-0 left-0 p-4 text-left">
-                <p className="text-[8px] uppercase tracking-[0.4em] font-sans font-light text-gold/70 mb-1">03</p>
-                <h3 className="text-lg font-serif italic text-cream font-light">{markExpressions[2].label}</h3>
-              </div>
-            </div>
+            ))}
 
             {/* Second stacked pair */}
-            <div className="col-span-3 md:col-span-4 relative group overflow-hidden cursor-pointer aspect-[4/3]">
-              <Image src={markExpressions[3].src} alt={markExpressions[3].label} fill className="object-cover group-hover:scale-[1.05] transition-transform duration-700" />
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-black/70 to-transparent" />
-              <div className="absolute bottom-0 left-0 p-4 text-left">
-                <p className="text-[8px] uppercase tracking-[0.4em] font-sans font-light text-gold/70 mb-1">04</p>
-                <h3 className="text-lg font-serif italic text-cream font-light">{markExpressions[3].label}</h3>
-              </div>
-            </div>
-
-            <div className="col-span-3 md:col-span-3 relative group overflow-hidden cursor-pointer aspect-[3/4]">
-              <Image src={markExpressions[4].src} alt={markExpressions[4].label} fill className="object-cover group-hover:scale-[1.05] transition-transform duration-700" />
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-black/70 to-transparent" />
-              <div className="absolute bottom-0 left-0 p-4 text-left">
-                <p className="text-[8px] uppercase tracking-[0.4em] font-sans font-light text-gold/70 mb-1">05</p>
-                <h3 className="text-lg font-serif italic text-cream font-light">{markExpressions[4].label}</h3>
-              </div>
-            </div>
-          </div>
-
-          {/* Row 2 — 3 equal */}
-          <div className="grid grid-cols-3 gap-[3px] mb-[3px]">
-            {markExpressions.slice(5, 8).map((item, i) => (
-              <div key={item.label} className="relative group overflow-hidden cursor-pointer aspect-square">
-                <Image src={item.src} alt={item.label} fill className="object-cover group-hover:scale-[1.05] transition-transform duration-700" />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-black/70 via-transparent to-transparent" />
+            {[3, 4].map((idx) => (
+              <div key={idx} className={`col-span-3 ${idx === 3 ? "md:col-span-4" : "md:col-span-3"} relative group overflow-hidden cursor-pointer ${idx === 3 ? "aspect-[4/3]" : "aspect-[3/4]"}`}>
+                <Image src={markExpressions[idx].src} alt={markExpressions[idx].label} fill className="object-cover group-hover:scale-[1.05] transition-transform duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-black/70 to-transparent group-hover:from-brand-black/90 group-hover:via-brand-black/50 group-hover:to-brand-black/20 transition-all duration-500" />
                 <div className="absolute bottom-0 left-0 right-0 p-4 text-left">
-                  <p className="text-[8px] uppercase tracking-[0.4em] font-sans font-light text-gold/70 mb-1">0{i + 6}</p>
-                  <h3 className="text-lg md:text-xl font-serif italic text-cream font-light mb-1">{item.label}</h3>
-                  <p className="text-cream/30 font-sans font-light text-[11px] hidden md:block">{item.desc}</p>
+                  <p className="text-[8px] uppercase tracking-[0.4em] font-sans font-light text-gold/70 mb-1">0{idx + 1}</p>
+                  <h3 className="text-lg font-serif italic text-cream font-light mb-1">{markExpressions[idx].label}</h3>
+                  <p className="text-cream/50 font-serif italic text-[12px] leading-relaxed opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100 translate-y-2 group-hover:translate-y-0">{markExpressions[idx].story}</p>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* Row 3 — Final wide piece */}
+          {/* Row 2. 3 equal */}
+          <div className="grid grid-cols-3 gap-[3px] mb-[3px]">
+            {markExpressions.slice(5, 8).map((item, i) => (
+              <div key={item.label} className="relative group overflow-hidden cursor-pointer aspect-square">
+                <Image src={item.src} alt={item.label} fill className="object-cover group-hover:scale-[1.05] transition-transform duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-black/70 via-transparent to-transparent group-hover:from-brand-black/90 group-hover:via-brand-black/50 group-hover:to-brand-black/20 transition-all duration-500" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-left">
+                  <p className="text-[8px] uppercase tracking-[0.4em] font-sans font-light text-gold/70 mb-1">0{i + 6}</p>
+                  <h3 className="text-lg md:text-xl font-serif italic text-cream font-light mb-1">{item.label}</h3>
+                  <p className="text-cream/30 font-sans font-light text-[11px] hidden md:block group-hover:opacity-0 transition-opacity duration-200">{item.desc}</p>
+                  <p className="text-cream/50 font-serif italic text-[12px] leading-relaxed opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100 translate-y-2 group-hover:translate-y-0 hidden md:block">{item.story}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Row 3. Final wide piece */}
           <div className="relative group overflow-hidden cursor-pointer aspect-[21/9] mb-16">
             <Image src={markExpressions[8].src} alt={markExpressions[8].label} fill className="object-cover group-hover:scale-[1.03] transition-transform duration-700" />
-            <div className="absolute inset-0 bg-brand-black/40" />
+            <div className="absolute inset-0 bg-brand-black/40 group-hover:bg-brand-black/70 transition-colors duration-500" />
             <div className="absolute inset-0 flex items-center justify-center text-center">
               <div>
                 <p className="text-[9px] uppercase tracking-[0.4em] font-sans font-light text-gold/70 mb-3">09</p>
                 <h3 className="text-3xl md:text-5xl font-serif italic text-cream font-light mb-3">{markExpressions[8].label}</h3>
-                <p className="text-cream/40 font-sans font-light text-sm">{markExpressions[8].desc}</p>
+                <p className="text-cream/40 font-sans font-light text-sm group-hover:opacity-0 transition-opacity duration-200">{markExpressions[8].desc}</p>
+                <p className="text-cream/60 font-serif italic text-[15px] leading-relaxed opacity-0 group-hover:opacity-100 transition-all duration-500 delay-100 translate-y-3 group-hover:translate-y-0 max-w-[500px] mx-auto">{markExpressions[8].story}</p>
               </div>
             </div>
           </div>
@@ -432,7 +423,7 @@ export default function Home() {
               The brand that was always there.
             </h2>
             <div className="text-cream/60 font-sans font-light text-[15px] leading-[1.8] space-y-6 mb-14">
-              <p>Grace Leon was born in Lagos, Nigeria — designed for a global stage. It is a response to the quiet confidence of women who command a room without raising their voice.</p>
+              <p>Grace Leon was born in Lagos, Nigeria, designed for a global stage. It is a response to the quiet confidence of women who command a room without raising their voice.</p>
               <p>Every piece is a meditation on memory, sovereignty, and craft. Not just what you wear, but what you leave behind.</p>
             </div>
             <Link href="/our-story" className="group inline-flex items-center gap-3">

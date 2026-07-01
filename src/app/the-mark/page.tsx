@@ -24,42 +24,42 @@ function Reveal({ children, className = "", delay = 0 }: { children: React.React
 const expressions = [
   {
     num: "01", title: "Grace", tag: "The Quiet Power of Presence",
-    text: "Grace is not softness. It is the discipline to remain composed when the world is loud. It is the woman who does not rush, who does not explain, who enters a room and simply belongs. This is the first truth the mark holds — that presence does not need volume.",
+    text: "Grace is not softness. It is the discipline to remain composed when the world is loud. It is the woman who does not rush, who does not explain, who enters a room and simply belongs. This is the first truth the mark holds: that presence does not need volume.",
     img: "/campaign/mark/01-grace.png",
   },
   {
     num: "02", title: "Sovereignty", tag: "Nothing Here Apologises",
-    text: "Sovereignty is the refusal to dilute. It is the unedited self, the woman who wears what she wears because it is hers, not because it was approved. The second arch of the mark opens upward — toward no ceiling, no permission required.",
+    text: "Sovereignty is the refusal to dilute. It is the unedited self, the woman who wears what she wears because it is hers, not because it was approved. The second arch of the mark opens upward, toward no ceiling, no permission required.",
     img: "/campaign/mark/02-sovereignty.png",
   },
   {
     num: "03", title: "Memory", tag: "What You Carry Forward",
-    text: "Memory is the weight of a ring that belonged to someone before you. It is the reason jewellery endures beyond fashion. Every piece of Grace Leon is designed to be inherited — not just worn, but remembered.",
+    text: "Memory is the weight of a ring that belonged to someone before you. It is the reason jewellery endures beyond fashion. Every piece of Grace Leon is designed to be inherited, not just worn, but remembered.",
     img: "/campaign/mark/03-memory.png",
   },
   {
     num: "04", title: "The Name", tag: "Identity Etched in Gold",
-    text: "A name is not just what you are called. It is what you answer to. Grace Leon exists because a name was chosen with the same care as a stone is set — deliberately, permanently, with the full knowledge of what it will carry.",
+    text: "A name is not just what you are called. It is what you answer to. Grace Leon exists because a name was chosen with the same care as a stone is set, deliberately, permanently, with the full knowledge of what it will carry.",
     img: "/campaign/mark/04-the-name.png",
   },
   {
     num: "05", title: "The Vow", tag: "A Promise Made Permanent",
-    text: "The vow is the moment a ring becomes more than a ring. It is the closest thing to permanence two people can create. Leon Rings exist for this moment — not the ceremony, but the silence that follows it, when the meaning settles.",
+    text: "The vow is the moment a ring becomes more than a ring. It is the closest thing to permanence two people can create. Leon Rings exist for this moment, not the ceremony, but the silence that follows it, when the meaning settles.",
     img: "/campaign/mark/05-the-vow.png",
   },
   {
     num: "06", title: "Lagos", tag: "Where It All Begins",
-    text: "Lagos is not a backdrop. It is the engine. The city that never pauses, that builds at a pace the world is only now learning to respect. Grace Leon is a Lagos brand — not in spite of the chaos, but because of the clarity it demands.",
+    text: "Lagos is not a backdrop. It is the engine. The city that never pauses, that builds at a pace the world is only now learning to respect. Grace Leon is a Lagos brand, not in spite of the chaos, but because of the clarity it demands.",
     img: "/campaign/mark/06-lagos.png",
   },
   {
     num: "07", title: "The Light", tag: "What Fire Looks Like at Rest",
-    text: "Light does not shout. A diamond does not announce its brilliance — it simply refracts what it receives. The seventh truth of the mark is about inner fire: the kind that does not flicker, that does not need fuel, that is simply there.",
+    text: "Light does not shout. A diamond does not announce its brilliance; it simply refracts what it receives. The seventh truth of the mark is about inner fire: the kind that does not flicker, that does not need fuel, that is simply there.",
     img: "/campaign/mark/07-the-light.png",
   },
   {
     num: "08", title: "Craft", tag: "Patience as a Philosophy",
-    text: "Craft is the opposite of haste. It is the goldsmith who files a surface for the fourth time because the third was not enough. At Grace Leon, craft is not a marketing word — it is the reason the work exists at all.",
+    text: "Craft is the opposite of haste. It is the goldsmith who files a surface for the fourth time because the third was not enough. At Grace Leon, craft is not a marketing word; it is the reason the work exists at all.",
     img: "/campaign/mark/08-craft.png",
   },
   {
@@ -73,7 +73,7 @@ export default function TheMarkPage() {
   return (
     <div className="flex flex-col w-full bg-brand-black">
 
-      {/* Hero — Full screen with animated mark */}
+      {/* Hero. Full screen with animated mark */}
       <section className="relative w-full h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-brand-black" />
 
@@ -98,7 +98,7 @@ export default function TheMarkPage() {
           </Reveal>
           <Reveal delay={0.5}>
             <p className="text-cream/30 font-sans font-light text-[13px] max-w-[460px] mx-auto leading-relaxed">
-              Nine truths. One mark. A brand built on the belief that jewellery is not decoration — it is declaration.
+              Nine truths. One mark. A brand built on the belief that jewellery is not decoration; it is declaration.
             </p>
           </Reveal>
         </div>
@@ -109,7 +109,7 @@ export default function TheMarkPage() {
         </div>
       </section>
 
-      {/* Expression Cards — alternating layout */}
+      {/* Expression Cards. alternating layout */}
       {expressions.map((expr, i) => (
         <section
           key={expr.num}
@@ -141,7 +141,7 @@ export default function TheMarkPage() {
         </section>
       ))}
 
-      {/* Closing — Composite */}
+      {/* Closing. Composite */}
       <section className="relative w-full h-[60vh] flex items-center justify-center overflow-hidden">
         <Image src="/campaign/mark/09-the-mark.png" alt="Nine truths" fill className="object-cover opacity-30" />
         <div className="absolute inset-0 bg-brand-black/60" />

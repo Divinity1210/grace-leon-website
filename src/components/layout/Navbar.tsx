@@ -91,7 +91,7 @@ export default function Navbar() {
       >
         {/* Left Nav */}
         <nav className="flex-1 hidden lg:flex items-center gap-10">
-          {/* Collections — triggers mega menu */}
+          {/* Collections. triggers mega menu */}
           <button
             onMouseEnter={openMega}
             onMouseLeave={closeMega}

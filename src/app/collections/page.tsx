@@ -48,7 +48,7 @@ export default function CollectionsPage() {
         </div>
       </section>
 
-      {/* Filter bar — sticky */}
+      {/* Filter bar. sticky */}
       <div className="sticky top-[72px] z-30 bg-white border-b border-gold/15">
         <div className="max-w-[1440px] mx-auto px-6 md:px-10 py-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           {/* Brand tabs */}

@@ -22,7 +22,7 @@ function Reveal({ children, className = "", delay = 0 }: { children: React.React
 }
 
 const steps = [
-  { num: "01", title: "Consultation", desc: "Share your vision with us — in person at our Lagos showroom, or via WhatsApp. We listen to the story behind the piece before we lift a tool." },
+  { num: "01", title: "Consultation", desc: "Share your vision with us, in person at our Lagos showroom, or via WhatsApp. We listen to the story behind the piece before we lift a tool." },
   { num: "02", title: "Design", desc: "Our master jewellers translate your vision into detailed CAD renders and material options. You approve every detail before we begin." },
   { num: "03", title: "Craft", desc: "Each bespoke piece is handcrafted over 4–8 weeks using ethically sourced materials. You receive progress updates at every stage." },
   { num: "04", title: "Delivery", desc: "Your finished piece arrives in signature Grace Leon packaging. Complimentary delivery within Lagos. International shipping available." },
@@ -54,7 +54,7 @@ export default function BespokePage() {
         <div className="max-w-[680px] mx-auto px-6 text-center">
           <Reveal>
             <p className="text-cream/50 font-sans font-light text-[15px] leading-[2]">
-              Some pieces cannot be found — they must be created. Grace Leon&apos;s bespoke service transforms your vision into a one-of-a-kind piece, crafted by master jewellers using the same techniques and materials as our signature collections.
+              Some pieces cannot be found; they must be created. Grace Leon&apos;s bespoke service transforms your vision into a one-of-a-kind piece, crafted by master jewellers using the same techniques and materials as our signature collections.
             </p>
           </Reveal>
         </div>
@@ -94,7 +94,7 @@ export default function BespokePage() {
               The conversation starts with you.
             </h2>
             <p className="text-cream/40 font-sans font-light text-[14px] leading-relaxed mb-12">
-              Whether you have a sketch, a story, or simply a feeling — we are ready to listen. Reach out to begin.
+              Whether you have a sketch, a story, or simply a feeling, we are ready to listen. Reach out to begin.
             </p>
             <div className="flex flex-col gap-4">
               <a

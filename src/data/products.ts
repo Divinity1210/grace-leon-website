@@ -18,7 +18,7 @@ export type Product = {
 
 export const products: Product[] = [
   // ═══════════════════════════════════
-  // LEON RINGS — Engagement & Wedding
+  // LEON RINGS. Engagement & Wedding
   // ═══════════════════════════════════
   {
     slug: "the-sovereign-solitaire",
@@ -32,7 +32,7 @@ export const products: Product[] = [
       "/products/WhatsApp Image 2026-06-24 at 13.59.29 (3).jpeg",
     ],
     details: { material: "18k Solid Yellow Gold", stone: "Round Brilliant Diamond", finish: "Polished" },
-    description: "The Sovereign Solitaire is the signature Leon Rings engagement piece — a cushion-set brilliant diamond on a twisted pavé band. Designed to be inherited.",
+    description: "The Sovereign Solitaire is the signature Leon Rings engagement piece, featuring a cushion-set brilliant diamond on a twisted pavé band. Designed to be inherited.",
   },
   {
     slug: "the-legacy-band",
@@ -46,7 +46,7 @@ export const products: Product[] = [
       "/products/WhatsApp Image 2026-06-24 at 13.59.31 (1).jpeg",
     ],
     details: { material: "18k Solid Yellow Gold", finish: "High Polish" },
-    description: "A timeless classic band in solid 18k gold. No embellishment, no excess — just the weight and warmth of gold that will be there for every anniversary.",
+    description: "A timeless classic band in solid 18k gold. No embellishment, no excess, just the weight and warmth of gold that will be there for every anniversary.",
   },
   {
     slug: "the-eternity-solitaire",
@@ -87,11 +87,11 @@ export const products: Product[] = [
       "/products/WhatsApp Image 2026-06-24 at 13.59.31 (6).jpeg",
     ],
     details: { material: "18k Yellow & White Gold", finish: "Mixed Polish" },
-    description: "A matched pair of wedding bands — his in brushed yellow gold, hers in polished white gold. Designed to be different, but unmistakably together.",
+    description: "A matched pair of wedding bands, his in brushed yellow gold, hers in polished white gold. Designed to be different, but unmistakably together.",
   },
 
   // ═══════════════════════════════════
-  // GRACE LEON JEWELRIES — Sets
+  // GRACE LEON JEWELRIES. Sets
   // ═══════════════════════════════════
   {
     slug: "emerald-halo-set",
@@ -119,7 +119,7 @@ export const products: Product[] = [
       "/products/WhatsApp Image 2026-06-24 at 13.59.29 (1).jpeg",
     ],
     details: { material: "Sterling Silver with Rhodium Plating", stone: "Amethyst & Emerald Cabochon", finish: "Polished" },
-    description: "An alternating cabochon collar necklace with matching cluster earrings. Green and purple stones set in silver filigree — drama and elegance in equal measure.",
+    description: "An alternating cabochon collar necklace with matching cluster earrings. Green and purple stones set in silver filigree, drama and elegance in equal measure.",
   },
   {
     slug: "sapphire-teardrop-set",
@@ -179,7 +179,7 @@ export const products: Product[] = [
   },
 
   // ═══════════════════════════════════
-  // GRACE LEON JEWELRIES — Earrings
+  // GRACE LEON JEWELRIES. Earrings
   // ═══════════════════════════════════
   {
     slug: "pave-embrace-hoops",
@@ -193,7 +193,7 @@ export const products: Product[] = [
       "/products/WhatsApp Image 2026-06-24 at 13.59.25 (3).jpeg",
     ],
     details: { material: "Sterling Silver", stone: "Cubic Zirconia", finish: "Polished" },
-    description: "Generously sized hoops encrusted with pavé-set stones. They catch the light the way confidence catches attention — effortlessly.",
+    description: "Generously sized hoops encrusted with pavé-set stones. They catch the light the way confidence catches attention, effortlessly.",
   },
   {
     slug: "emerald-solitaire-studs",
@@ -207,11 +207,11 @@ export const products: Product[] = [
       "/products/WhatsApp Image 2026-06-24 at 13.59.26.jpeg",
     ],
     details: { material: "Sterling Silver", stone: "Emerald CZ", finish: "Rhodium Plated" },
-    description: "Oval emerald-cut stones in a halo setting. Designed to be noticed without trying — the hallmark of true elegance.",
+    description: "Oval emerald-cut stones in a halo setting. Designed to be noticed without trying, the hallmark of true elegance.",
   },
 
   // ═══════════════════════════════════
-  // GRACE LEON JEWELRIES — Necklaces
+  // GRACE LEON JEWELRIES. Necklaces
   // ═══════════════════════════════════
   {
     slug: "lumiere-pendant",
@@ -225,7 +225,7 @@ export const products: Product[] = [
       "/products/WhatsApp Image 2026-06-24 at 13.59.30 (1).jpeg",
     ],
     details: { material: "Sterling Silver", stone: "Cushion Cut CZ", finish: "Polished" },
-    description: "A single cushion-cut stone suspended from a delicate chain. The Lumière pendant rests at the clavicle — a quiet punctuation to any neckline.",
+    description: "A single cushion-cut stone suspended from a delicate chain. The Lumière pendant rests at the clavicle, a quiet punctuation to any neckline.",
   },
   {
     slug: "diamond-collar-necklace",
@@ -239,11 +239,11 @@ export const products: Product[] = [
       "/products/WhatsApp Image 2026-06-24 at 13.59.29 (8).jpeg",
     ],
     details: { material: "Sterling Silver", stone: "Mixed Cut CZ", finish: "Rhodium Plated" },
-    description: "A full collar of mixed-cut stones tapering from the centre. Not a necklace — an architecture of light that follows the neckline.",
+    description: "A full collar of mixed-cut stones tapering from the centre. Not a necklace, but an architecture of light that follows the neckline.",
   },
 
   // ═══════════════════════════════════
-  // GRACE LEON JEWELRIES — Bracelets
+  // GRACE LEON JEWELRIES. Bracelets
   // ═══════════════════════════════════
   {
     slug: "diamond-tennis-bracelet",
@@ -261,7 +261,7 @@ export const products: Product[] = [
   },
 
   // ═══════════════════════════════════
-  // GRACE LEON JEWELRIES — Bags
+  // GRACE LEON JEWELRIES. Bags
   // ═══════════════════════════════════
   {
     slug: "croc-sovereign-clutch",
@@ -274,7 +274,7 @@ export const products: Product[] = [
       "/products/WhatsApp Image 2026-06-24 at 13.59.24.jpeg",
     ],
     details: { material: "Croc-Embossed Italian Leather", finish: "Gold Hardware" },
-    description: "A structured top-handle clutch in croc-embossed leather with a sculptural gold handle. It is not just an accessory — it is an entrance.",
+    description: "A structured top-handle clutch in croc-embossed leather with a sculptural gold handle. It is not just an accessory; it is an entrance.",
   },
   {
     slug: "rose-crystal-minaudiere",
@@ -300,7 +300,7 @@ export const products: Product[] = [
       "/products/WhatsApp Image 2026-06-24 at 13.59.26 (4).jpeg",
     ],
     details: { material: "Gold Alloy & Crystal", finish: "Multi-Colour Crystal" },
-    description: "A spherical clutch covered in a mosaic of multi-coloured gemstones set in gold. Each angle reveals a different colour palette — like stained glass you carry.",
+    description: "A spherical clutch covered in a mosaic of multi-coloured gemstones set in gold. Each angle reveals a different colour palette, like stained glass you carry.",
   },
   {
     slug: "emerald-lotus-clutch",
@@ -313,7 +313,7 @@ export const products: Product[] = [
       "/products/WhatsApp Image 2026-06-24 at 13.59.26 (5).jpeg",
     ],
     details: { material: "Gold Alloy & Crystal", finish: "Emerald Crystal" },
-    description: "An oval clutch with marquise-cut emerald stones arranged in a lotus pattern, set in gold filigree. A piece that holds everything you need — and everything you are.",
+    description: "An oval clutch with marquise-cut emerald stones arranged in a lotus pattern, set in gold filigree. A piece that holds everything you need, and everything you are.",
   },
   {
     slug: "noir-emerald-box-clutch",
@@ -353,11 +353,11 @@ export const products: Product[] = [
       "/products/WhatsApp Image 2026-06-24 at 13.59.27 (3).jpeg",
     ],
     details: { material: "Italian Nappa Leather", finish: "Gold Clip Closure" },
-    description: "A sculpted cloud-form clutch in cream nappa leather with a single gold clasp. Impossibly soft, quietly structural — the hand finds it before the eye does.",
+    description: "A sculpted cloud-form clutch in cream nappa leather with a single gold clasp. Impossibly soft, quietly structural, the hand finds it before the eye does.",
   },
 
   // ═══════════════════════════════════
-  // GRACE LEON STERLING — Necklaces
+  // GRACE LEON STERLING. Necklaces
   // ═══════════════════════════════════
   {
     slug: "arch-link-pendant",
@@ -399,11 +399,11 @@ export const products: Product[] = [
       "/products/WhatsApp Image 2026-06-24 at 13.59.28 (5).jpeg",
     ],
     details: { material: "925 Sterling Silver", stone: "CZ Solitaire", finish: "Polished" },
-    description: "A single pear-drop crystal on a delicate sterling chain. It catches the light from every angle — a small fire at the throat.",
+    description: "A single pear-drop crystal on a delicate sterling chain. It catches the light from every angle, a small fire at the throat.",
   },
 
   // ═══════════════════════════════════
-  // GRACE LEON STERLING — Earrings
+  // GRACE LEON STERLING. Earrings
   // ═══════════════════════════════════
   {
     slug: "crystal-drop-earrings",
@@ -431,7 +431,7 @@ export const products: Product[] = [
       "/products/WhatsApp Image 2026-06-24 at 13.59.28 (7).jpeg",
     ],
     details: { material: "925 Sterling Silver", finish: "Polished" },
-    description: "Slim huggie hoops that sit flush against the lobe. No dangle, no drama — just a clean line of silver that says enough.",
+    description: "Slim huggie hoops that sit flush against the lobe. No dangle, no drama, just a clean line of silver that says enough.",
   },
 
   // ═══════════════════════════════════
@@ -449,7 +449,7 @@ export const products: Product[] = [
       "/products/WhatsApp Image 2026-06-24 at 13.59.29 (10).jpeg",
     ],
     details: { material: "Sterling Silver", stone: "Moonstone & CZ", finish: "Rhodium Plated" },
-    description: "A graduated rivière necklace with cabochon moonstone centres and matching earrings. The stones shift colour with movement — no two glances are the same.",
+    description: "A graduated rivière necklace with cabochon moonstone centres and matching earrings. The stones shift colour with movement, and no two glances are the same.",
   },
   {
     slug: "pear-drop-collar",

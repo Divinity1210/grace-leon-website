@@ -25,19 +25,19 @@ const timeline = [
   {
     year: "2024",
     title: "The Founding",
-    text: "Grace Leon was conceived in Lagos, Nigeria — not as a brand to follow, but one that arrived fully formed. Born from a conviction that African luxury doesn't need permission. That a ring could carry the weight of a name, and a name could carry the weight of a legacy.",
+    text: "Grace Leon was conceived in Lagos, Nigeria, not as a brand to follow, but one that arrived fully formed. Born from a conviction that African luxury doesn't need permission. That a ring could carry the weight of a name, and a name could carry the weight of a legacy.",
     img: "/campaign/mark/06-lagos.png",
   },
   {
     year: "The Name",
     title: "Grace Leon",
-    text: "\"Grace\" — because quiet power is the loudest kind. \"Leon\" — a lion that doesn't need to roar. The name was chosen not to describe the jewellery, but the women who wear it. Women who walk into rooms that already know them.",
+    text: "\"Grace\". because quiet power is the loudest kind. \"Leon\". a lion that doesn't need to roar. The name was chosen not to describe the jewellery, but the women who wear it. Women who walk into rooms that already know them.",
     img: "/campaign/mark/04-the-name.png",
   },
   {
     year: "The Mark",
     title: "Four Arches. One Symbol.",
-    text: "The interlocking arches of the Grace Leon mark hold nine truths: Grace, Sovereignty, Memory, The Name, The Vow, Lagos, The Light, Craft, and The Mark itself. Every arch opens in two directions — upward and downward — a reminder that strength looks the same from every angle.",
+    text: "The interlocking arches of the Grace Leon mark hold nine truths: Grace, Sovereignty, Memory, The Name, The Vow, Lagos, The Light, Craft, and The Mark itself. Every arch opens in two directions, upward and downward, a reminder that strength looks the same from every angle.",
     img: "/campaign/mark/09-the-mark.png",
   },
   {
@@ -80,7 +80,7 @@ export default function OurStoryPage() {
         <div className="max-w-[680px] mx-auto px-6 text-center">
           <Reveal>
             <p className="text-cream/50 font-sans font-light text-[15px] leading-[2] mb-0">
-              Grace Leon was born in Lagos, Nigeria — designed for a global stage. It is a response to the quiet confidence of women who command a room without raising their voice. Every piece is a meditation on memory, sovereignty, and craft. Not just what you wear, but what you leave behind.
+              Grace Leon was born in Lagos, Nigeria, designed for a global stage. It is a response to the quiet confidence of women who command a room without raising their voice. Every piece is a meditation on memory, sovereignty, and craft. Not just what you wear, but what you leave behind.
             </p>
           </Reveal>
         </div>
