@@ -1,26 +1,41 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-gold: #C9A84C;
+  --color-gold-light: #E8D5A3;
+  --color-cream: #F5F0E8;
+  --color-cream-deep: #EDE5D8;
+  --color-brand-black: #080808;
+  --color-charcoal: #1A1A1A;
+  --color-brand-white: #FFFFFF;
+  --color-background: #080808;
+  --color-foreground: #F5F0E8;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #080808;
+  color: #F5F0E8;
+  overflow-x: hidden;
 }
+
+::selection {
+  background: #C9A84C;
+  color: #080808;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatParticle {
+  0%, 100% { transform: translateY(0) translateX(0); opacity: 0; }
+  10% { opacity: 0.6; }
+  50% { transform: translateY(-120px) translateX(20px); opacity: 0.3; }
+  90% { opacity: 0; }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
