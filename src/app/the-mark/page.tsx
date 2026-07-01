@@ -80,12 +80,16 @@ export default function TheMarkPage() {
         {/* Animated logo mark */}
         <div className="relative z-10 text-center">
           <Reveal>
-            <img
-              src="/Logo.png"
-              alt="The Mark"
-              className="h-[100px] md:h-[120px] mx-auto mb-16 animate-pulse"
-              style={{ filter: "invert(1) brightness(2) sepia(1) saturate(3) hue-rotate(10deg)" }}
-            />
+            <div className="relative mx-auto mb-16 w-[120px] md:w-[150px]">
+              {/* Glow backdrop */}
+              <div className="absolute inset-0 blur-[40px] bg-gold/20 rounded-full scale-150 animate-pulse" />
+              <img
+                src="/Logo.png"
+                alt="The Mark"
+                className="relative w-full h-auto mix-blend-screen invert brightness-200"
+                style={{ filter: "drop-shadow(0 0 20px rgba(191, 155, 80, 0.4)) drop-shadow(0 0 60px rgba(191, 155, 80, 0.15))" }}
+              />
+            </div>
           </Reveal>
           <Reveal delay={0.3}>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif italic text-cream font-light leading-[1.05] mb-8">

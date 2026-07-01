@@ -17,7 +17,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           {/* Logo Column */}
           <div className="col-span-1 md:col-span-1 flex flex-col items-start">
-            <img src="/Logo.png" alt="Grace Leon" className="h-10 invert brightness-200 mix-blend-screen mb-6" />
+            <img src="/Logo.png" alt="Grace Leon" className="h-16 invert brightness-200 mix-blend-screen mb-6" />
             <div className="flex space-x-4 mt-auto">
               <a href="#" className="hover:text-gold transition-colors">
                 <InstagramIcon />

@@ -281,6 +281,14 @@ export default function Home() {
               </Reveal>
             ))}
           </div>
+
+          {/* Explore All Collections CTA */}
+          <Reveal className="text-center mt-16">
+            <Link href="/collections" className="group relative inline-block px-14 py-5 bg-brand-black text-cream overflow-hidden">
+              <span className="absolute inset-0 bg-gold translate-y-[101%] group-hover:translate-y-0 transition-transform duration-400 ease-out" />
+              <span className="relative z-10 text-[11px] uppercase tracking-[0.4em] font-sans font-light group-hover:text-brand-black transition-colors duration-300">Explore All Collections</span>
+            </Link>
+          </Reveal>
         </div>
       </section>
 
