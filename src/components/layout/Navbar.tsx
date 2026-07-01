@@ -85,8 +85,8 @@ export default function Navbar() {
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out px-6 md:px-12 flex items-center justify-between bg-brand-black",
           scrolled
-            ? "h-[72px] border-b border-brand-white/5"
-            : "h-24"
+            ? "h-20 border-b border-brand-white/5"
+            : "h-28"
         )}
       >
         {/* Left Nav */}
@@ -126,7 +126,7 @@ export default function Navbar() {
             alt="Grace Leon"
             className={cn(
               "transition-all duration-500 invert brightness-200 mix-blend-screen",
-              scrolled ? "h-8" : "h-10 md:h-12"
+              scrolled ? "h-10" : "h-14 md:h-16"
             )}
           />
         </Link>
@@ -180,7 +180,7 @@ export default function Navbar() {
         onMouseLeave={closeMega}
         className={cn(
           "fixed left-0 right-0 z-40 bg-brand-black border-b border-gold/10 transition-all duration-400 ease-out overflow-hidden hidden lg:block",
-          scrolled ? "top-[72px]" : "top-24",
+          scrolled ? "top-20" : "top-28",
           megaOpen
             ? "opacity-100 pointer-events-auto max-h-[520px]"
             : "opacity-0 pointer-events-none max-h-0"
