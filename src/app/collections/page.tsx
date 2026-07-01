@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { products, brands, categories } from "@/data/products";
 
@@ -24,6 +24,14 @@ function Reveal({ children, className = "", delay = 0 }: { children: React.React
 }
 
 export default function CollectionsPage() {
+  return (
+    <Suspense fallback={<div className="flex items-center justify-center h-screen bg-brand-black"><div className="w-6 h-6 border border-gold/40 border-t-gold rounded-full animate-spin" /></div>}>
+      <CollectionsContent />
+    </Suspense>
+  );
+}
+
+function CollectionsContent() {
   const searchParams = useSearchParams();
   const brandParam = searchParams.get("brand");
   const [activeBrand, setActiveBrand] = useState("ALL");
